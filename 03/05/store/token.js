@@ -31,7 +31,7 @@ const initialState = {
   error: null
 }
 
-function token(state = 0, action){
+function token(state = initialState, action){
   switch(action.type){
     case TOKEN_FETCH_STARTED:
       return {...state, loading: true};
